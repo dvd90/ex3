@@ -11,8 +11,12 @@ a {
   text-decoration: none;
 }
 
+ul {
+  list-style: none;
+}
+
 body{
-  font-family: Arial;
+  font-family: 'Amiko', sans-serif;
 }
 
 header {
@@ -28,18 +32,28 @@ footer {
   background-color: #000000;
 }
 
+#layout2 footer {
+  position: fixed;
+  bottom: 0;
+}
+
 #layout1 main{
   width: 881px;
   height:860px;
   margin: 0 auto;
-  background-color: #333333;
+  background-color: #FFFFFF;
+}
+
+#layout2 main{
+  margin: 0 auto;
+  background-color: #FFFFFF;
 }
 
 nav {
-  width: 300px;
+  width: 350px;
   height: 33px;
   margin: 50px auto;
-  background-color: #000000;
+  background-color: #F2E9E9;
 }
 
 .boxes div {
@@ -47,11 +61,54 @@ nav {
   background-color: #EBEF18;
 }
 
+.nav-menu li {
+  display: inline;
+  padding-left: 18px;
+}
+
+.nav-menu li a {
+  color: #000000;
+  font-size: 24px;
+}
+
+.circle {
+  display: block;
+  border-radius: 50%;
+  height: 14px;
+  width: 14px;
+  background: #F72828;
+}
+
+#layout1 .circle {
+  margin-left: 34px;
+}
+
+#layout2 .circle {
+  margin-left: 125px;
+}
+
+#layout3 .circle {
+  margin-left: 255px;
+}
+
 #layout1 .text {
+  position: relative;
   float: left;
   width: 50%;
   height: 120px;
-  background-color: blue;
+}
+
+.title-text {
+  position: absolute;
+  top: 267px;
+}
+
+#layout1 .title-text h1 {
+  font-size: 72px;
+}
+
+#layout1 .title-text h3 {
+  font-size: 24px;
 }
 
 #layout1 .boxes {
@@ -61,14 +118,127 @@ nav {
   float: left;
   width: 50%;
   height: 500px;
-  background-color: red;
+  margin-top: 91px;
 }
 
 #layout1 .box1 {
+  position: absolute;
   top: 44px;
   left: 0px;
   width: 75px;
   height: 23px;
+}
+
+#layout1 .box2 {
+  position: absolute;
+  top: 75px;
+  left: 0px;
+  width: 136px;
+  height: 46px;
+}
+
+#layout1 .box3 {
+  position: absolute;
+  top: 132px;
+  left: 0px;
+  width: 134px;
+  height: 404px;
+}
+
+#layout1 .box4 {
+  position: absolute;
+  top: 547px;
+  left: 0px;
+  width: 88px;
+  height: 28px;
+}
+
+#layout1 .box5 {
+  position: absolute;
+  top: 582px;
+  left: 0px;
+  width: 25px;
+  height: 26px;
+}
+
+#layout1 .box6 {
+  position: absolute;
+  top: 582px;
+  left: 32px;
+  width: 25px;
+  height: 26px;
+}
+
+#layout1 .box7 {
+  position: absolute;
+  top: 44px;
+  left: 149px;
+  width: 246px;
+  height: 352px;
+}
+
+#layout1 .box8 {
+  position: absolute;
+  top: 412px;
+  left: 149px;
+  width: 123px;
+  height: 212px;
+}
+
+#layout1 .box9 {
+  position: absolute;
+  top: 412px;
+  left: 286px;
+  width: 55px;
+  height: 105px;
+}
+
+#layout1 .box10 {
+  position: absolute;
+  top: 524px;
+  left: 286px;
+  width: 110px;
+  height: 58px;
+}
+
+#layout1 .box11 {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  width: 28px;
+  height: 55px;
+}
+
+#layout1 .box12 {
+  position: absolute;
+  top: 66px;
+  right: 0px;
+  width: 28px;
+  height: 55px;
+}
+
+#layout1 .box13 {
+  position: absolute;
+  top: 132px;
+  right: 0px;
+  width: 28px;
+  height: 55px;
+}
+
+#layout1 .box14 {
+  position: absolute;
+  top: 198px;
+  right: 0px;
+  width: 28px;
+  height: 198px;
+}
+
+#layout1 .box15 {
+  position: absolute;
+  top: 412px;
+  right: 0px;
+  width: 55px;
+  height: 105px;
 }
 
 .clear {
@@ -77,15 +247,110 @@ nav {
 
 .boxes div {
   position: absolute;
+}
+
+#layout1 .boxes div {
   background-color: #EBEF18;
 }
 
+#layout2 .boxes div {
+  background-color: #C4C4C4;
+}
 
+#layout2 aside {
+  position: absolute;
+  right: 0px;
+  background-color: #EBEF18;
+  height: 2125px;
+  width: 169px;
+}
 
+#layout2 .boxes {
+  position: relative;
+  top: 0px;
+  left: 151px;
+  float: left;
+  width: 969px;
+  height: 467px;
+  margin-top: 119px;
+}
 
+#layout2 .box1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 457px;
+  height: 299px;
+}
 
+#layout2 .box2 {
+  position: absolute;
+  top: 369px;
+  left: 0;
+  width: 457px;
+  height: 299px;
+}
 
+#layout2 .box3 {
+  position: absolute;
+  top: 738px;
+  left: 0;
+  width: 457px;
+  height: 299px;
+}
 
+#layout2 .box4 {
+  position: absolute;
+  top: 1107px;
+  left: 0;
+  width: 457px;
+  height: 299px;
+}
 
+#layout2 .box5 {
+  position: absolute;
+  top: 1476px;
+  left: 0;
+  width: 457px;
+  height: 299px;
+}
 
+#layout2 .box6 {
+  position: absolute;
+  top: 168px;
+  right: 0;
+  width: 457px;
+  height: 299px;
+}
 
+#layout2 .box7 {
+  position: absolute;
+  top: 537px;
+  right: 0;
+  width: 457px;
+  height: 299px;
+}
+
+#layout2 .box8 {
+  position: absolute;
+  top: 906px;
+  right: 0;
+  width: 457px;
+  height: 299px;
+}
+
+#layout2 .box9 {
+  position: absolute;
+  top: 1275px;
+  right: 0;
+  width: 457px;
+  height: 299px;
+}
+
+#layout2 .box10 {
+  position: absolute;
+  top: 1644px;
+  right: 0;
+  width: 457px;
+  height: 299px;
+}
