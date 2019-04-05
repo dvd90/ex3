@@ -354,3 +354,49 @@ nav {
   width: 457px;
   height: 299px;
 }
+
+#layout2 .side-content {
+  position: relative;
+}
+
+#layout2 .side-box1 {
+  position: absolute;
+  top: 119px;
+  left: 0;
+  width: 80px;
+  height: 80px;
+  background-color: #000000;
+}
+
+#layout2 .side-box2 {
+  position: absolute;
+  top: 247px;
+  right: 0;
+  width: 80px;
+  height: 80px;
+  background-color: #FFFFFF;
+}
+
+#layout2 .side-box3 {
+  position: absolute;
+  top: 616px;
+  left: 0;
+  width: 80px;
+  height: 80px;
+  background-color: #000000;
+}
+
+.side-letters {
+  position: relative;
+  top:1240px;
+}
+
+.side-letters li {
+  font-size: 96px;
+  text-align: center;
+  color: #000000;
+}
+
+.side-letters li a {
+  color: #000000;
+}
