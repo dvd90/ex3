@@ -1,30 +1,35 @@
 <!DOCTYPE html>
-  <head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="includes/style.css">
-    <link href="https://fonts.googleapis.com/css?family=Amiko:400,700" rel="stylesheet">
-    <title>Layout 3</title>
-  </head>
-  <body id="layout3">
-    <header>
-      <nav>
-        <ul class="nav-menu">
-        <figure class="circle"></figure>
-        <li><a href="index.html">MIX</a></li>
-        <li><a href="layout2.html">STAIRS</a></li>
-        <li><a href="#">DYNAMIC</a></li>
-      </ul>
-    </nav>
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="includes/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Amiko:400,700" rel="stylesheet">
+  <title>Layout 3</title>
+</head>
+<body id="layout3">
+  <header>
+    <a class="black-box" onClick="addSquares()"></a>
   </header>
-  <wrapper>
-  <main>
-    <section class="text">
-    </section>
-    <section class="boxes">
-    </section>
-  </main>
-  </wrapper>
-  <footer>
-  </footer>
+  <div class="wrapper">
+  <nav>
+    <ul class="nav-menu">
+    <figure class="circle"></figure>
+    <li><a href="index.html">MIX</a></li>
+    <li><a href="layout2.html">STAIRS</a></li>
+    <li><a href="#">DYNAMIC</a></li>
+  </ul>
+</nav>
+<main>
+  <div class="squares-container">
+  <section id="js-squares">
+    <div class="clear"></div>
+  </section>
+  </div>
+</main>
+<div class="green-side"></div>
+</div>
+<div class="yellow-foot"></div>
+<footer>
+</footer>
+<script src="./includes/script.js"></script>
 </body>
 </html>
