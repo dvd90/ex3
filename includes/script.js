@@ -62,40 +62,43 @@ let addSquares = () => {
   }
 };
 
+
+
 function checkChoices(){
-  if (choices[0].innerHTML == choices[1].innerHTML)
+  if (choices[0].innerHTML == choices[1].innerHTML && choices[0] !== choices[1])
     return true;
   return false;
 }
 
 let showLetter = function(){
+// strip the class name to and work with just one classname
+  let obj = this
+  obj.className = 'show';
+  console.log(obj);
+  choices.push(obj);
 
-  if (!this.className.includes('show')){
-   this.className += ' show';
-   choices.push(this);
-  }
 
   if (choices.length == 2){
     if (checkChoices()){
       choices[0].className = 'found';
+      choices[0].removeEventListener('click', showLetter);
       choices[1].className = 'found';
-      clear();
-      choices = [];
+      choices[1].removeEventListener('click', showLetter);
     }
-     setTimeout(function () { clear();}, 600);
-  }else{
-    setTimeout(function () { clear();}, 600);
   }
-  console.log(choices[0].innerHTML);
-  console.log(choices[1].innerHTML);
-
+  setTimeout(function() { clear(choices);}, 400);
 }
 
 
 
 function clear(){
-  for(let i = 0; i < choices.length; ++i) {
-    choices[i].className = choices[i].className.replace('show', '');
+  if (!(choices[0].className.includes('found')) && !(choices[0].className.includes('found'))){
+    for(let i = 0; i < choices.length; ++i){
+      choices[i].className = 'square';
+    }
+  }
+  if(choices.length == 2){
+    choices = [];
   }
 }
 
